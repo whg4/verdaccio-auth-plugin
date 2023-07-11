@@ -84,7 +84,7 @@ export default class AuthCustomPlugin implements IPluginAuth<CustomConfig> {
     }
      */
 
-    if (user.name === this.noc && pkg?.access?.includes[user.name]) {
+    if (user.name && pkg?.publish?.includes(user.name)) {
       this.logger.debug({ name: user.name }, '@{name} has been granted to publish');
       cb(null, true);
     } else {
@@ -105,7 +105,7 @@ export default class AuthCustomPlugin implements IPluginAuth<CustomConfig> {
     }
      */
 
-    if (user.name === this.noc && pkg?.access?.includes[user.name]) {
+    if (user.name && pkg?.publish?.includes(user.name)) {
       this.logger.debug({ name: user.name }, '@{name} has been granted to publish');
       cb(null, true);
     } else {

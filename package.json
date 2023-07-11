@@ -1,6 +1,6 @@
 {
-  "name": "verdaccio-auth-group",
-  "version": "0.0.1",
+  "name": "verdaccio-mtauthgroup",
+  "version": "0.0.5",
   "description": "A verdaccio plugin to control auth group",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
